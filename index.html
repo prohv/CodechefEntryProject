@@ -15,43 +15,85 @@
         <div class="container mx-auto flex justify-between items-center">
             <div class="flex items-center space-x-4 w-full justify-between">
                 <i class="fab fa-apple text-2xl"></i>
-                <div class="block lg:hidden">
-                    <button class="text-white text-2xl" id="hamburger-menu">
-                        <i class="fas fa-bars"></i>
-                    </button>
+                <div class="relative dropdown">
+                    <a class="nav-link px-2 py-1 rounded cursor-pointer">Store</a>
+                    <div class="dropdown-content" style="width: 150px;">
+                        <a href="#">iPhone</a>
+                        <a href="#">MacBook Pro</a>
+                        <a href="#">iPad Pro</a>
+                        <a href="#">Apple Watch</a>
+                        <a href="#">AirPods</a>
+                    </div>
                 </div>
-                <div class="hidden lg:flex space-x-4 w-full justify-between">
-                    <div class="relative dropdown">
-                        <a class="nav-link px-2 py-1 rounded cursor-pointer">Store</a>
-                        <div class="dropdown-content" style="width: 150px;">
-                            <a href="#">iPhone</a>
-                            <a href="#">MacBook Pro</a>
-                            <a href="#">iPad Pro</a>
-                            <a href="#">Apple Watch</a>
-                            <a href="#">AirPods</a>
-                        </div>
+                <div class="relative dropdown">
+                    <a class="nav-link px-2 py-1 rounded cursor-pointer">Mac</a>
+                    <div class="dropdown-content" style="width: 150px;">
+                        <a href="#">iMac</a>
+                        <a href="#">MacBook Air</a>
+                        <a href="#">Mac Mini</a>
+                        <a href="#">Mac Pro</a>
+                        <a href="#">Mac Studio</a>
                     </div>
-                    <div class="relative dropdown">
-                        <a class="nav-link px-2 py-1 rounded cursor-pointer">Mac</a>
-                        <div class="dropdown-content" style="width: 150px;">
-                            <a href="#">iMac</a>
-                            <a href="#">MacBook Air</a>
-                            <a href="#">Mac Mini</a>
-                            <a href="#">Mac Pro</a>
-                            <a href="#">Mac Studio</a>
-                        </div>
+                </div>
+                <div class="relative dropdown">
+                    <a class="nav-link px-2 py-1 rounded cursor-pointer">iPad</a>
+                    <div class="dropdown-content" style="width: 150px;">
+                        <a href="#">iPad Air</a>
+                        <a href="#">iPad Pro</a>
+                        <a href="#">iPad Mini</a>
+                        <a href="#">iPad</a>
+                        <a href="#">iPad 12 inch</a>
                     </div>
-                    <div class="relative dropdown">
-                        <a class="nav-link px-2 py-1 rounded cursor-pointer">iPad</a>
-                        <div class="dropdown-content" style="width: 150px;">
-                            <a href="#">iPad Air</a>
-                            <a href="#">iPad Pro</a>
-                            <a href="#">iPad Mini</a>
-                            <a href="#">iPad</a>
-                            <a href="#">iPad 12 inch</a>
-                        </div>
+                </div>
+                <div class="relative dropdown">
+                    <a class="nav-link px-2 py-1 rounded cursor-pointer">iPhone</a>
+                    <div class="dropdown-content" style="width: 200px;">
+                        <a href="#">iPhone 16</a>
+                        <a href="#">iPhone 16 Plus</a>
+                        <a href="#">iPhone 16 Pro</a>
+                        <a href="#">iPhone 16 Pro Max</a>
                     </div>
-                    <!-- More dropdowns removed for brevity -->
+                </div>
+                <div class="relative dropdown">
+                    <a class="nav-link px-2 py-1 rounded cursor-pointer">Watch</a>
+                    <div class="dropdown-content" style="width: 250px;">
+                        <a href="#">Apple Watch Series 10</a>
+                        <a href="#">Apple Watch Ultra 2</a>
+                    </div>
+                </div>
+                <div class="relative dropdown">
+                    <a class="nav-link px-2 py-1 rounded cursor-pointer">AirPods</a>
+                    <div class="dropdown-content" style="width: 150px;">
+                        <a href="#">AirPods 4</a>
+                        <a href="#">AirPods Pro 2</a>
+                        <a href="#">AirPods Max</a>
+                    </div>
+                </div>
+                <div class="relative dropdown">
+                    <a class="nav-link px-2 py-1 rounded cursor-pointer">TV & Home</a>
+                    <div class="dropdown-content" style="width: 150px;">
+                        <a href="#">Apple TV 4K</a>
+                        <a href="#">HomePod Mini</a>
+                        <a href="#">HomePod</a>
+                    </div>
+                </div>
+                <div class="relative dropdown">
+                    <a class="nav-link px-2 py-1 rounded cursor-pointer">Accessories</a>
+                    <div class="dropdown-content" style="width: 300px;">
+                        <a href="#">iPhone 16 Pro Clear Case with MagSafe</a>
+                        <a href="#">Apple Watch Bands</a>
+                        <a href="#">AirPods Pro 2 Silicone Ear Tips</a>
+                        <a href="#">MagSafe Charger</a>
+                        <a href="#">Apple Pencil</a>
+                    </div>
+                </div>
+                <div class="relative dropdown">
+                    <a class="nav-link px-2 py-1 rounded cursor-pointer">Support</a>
+                    <div class="dropdown-content" style="width: 150px;">
+                        <a href="#">Community</a>
+                        <a href="#">Check Coverage</a>
+                        <a href="#">Repair</a>
+                    </div>
                 </div>
             </div>
             <div class="flex items-center space-x-6">
@@ -79,17 +121,6 @@
             <button class="border border-white text-white px-6 py-2 rounded-full hover:bg-white hover:text-black">Buy</button>
         </div>
     </div>
-
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-
-    <script>
-        // Toggle the mobile menu
-        const hamburgerMenu = document.getElementById('hamburger-menu');
-        const navLinks = document.querySelector('.lg\\:hidden');
-
-        hamburgerMenu.addEventListener('click', () => {
-            navLinks.classList.toggle('hidden');
-        });
-    </script>
 </body>
 </html>
