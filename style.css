@@ -1,0 +1,68 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+.nav-link:hover {
+    color: #A9A9A9; /* Darker shade of grey */
+    transform: scale(1.01); /* Slightly scale up */
+    transition: color 0.3s, transform 0.3s;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Blur effect */
+    padding: 10px;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    transform: translateY(-10px);
+}
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-align: center;
+    transition: transform 0.3s;
+}
+.dropdown-content a:hover {
+    transform: scale(1.01); /* Slightly scale up */
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+.neon-text {
+    position: relative;
+    color: white;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 9rem;
+    text-align: center;
+    opacity: 1;
+    z-index: 0;
+    text-shadow: 
+        0 0 10px rgba(255, 255, 255, 0.8), 
+        0 0 20px rgba(255, 255, 255, 0.6), 
+        0 0 30px rgba(255, 255, 255, 0.4),
+        0 0 40px rgba(255, 255, 255, 0.3),
+        0 0 50px rgba(255, 255, 255, 0.2),
+        0 0 75px rgba(255, 255, 255, 0.1); /* Neon light shadow effect */
+}
+.neon-text::before {
+    content: 'PRO';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+    opacity: 0.4;
+    filter: blur(10px);
+    z-index: -1;
+}
+
