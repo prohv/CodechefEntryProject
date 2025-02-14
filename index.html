@@ -1,50 +1,13 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iPhone 16 Pro</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"/>
-    <style>
-        body {
-            font-family: 'Montserrat', sans-serif;
-        }
-        .nav-link:hover {
-            color: #A9A9A9; /* Darker shade of grey */
-            transform: scale(1.01); /* Slightly scale up */
-            transition: color 0.3s, transform 0.3s;
-        }
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent background */
-            backdrop-filter: blur(10px); /* Blur effect */
-            padding: 10px;
-            top: 100%;
-            left: 0;
-            z-index: 1;
-            opacity: 0;
-            transition: opacity 0.5s ease, transform 0.5s ease;
-            transform: translateY(-10px);
-        }
-        .dropdown-content a {
-            color: white;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            font-weight: bold;
-            font-size: 1.1rem;
-            text-align: center;
-            transition: transform 0.3s;
-        }
-        .dropdown-content a:hover {
-            transform: scale(1.01); /* Slightly scale up */
-        }
-        .dropdown:hover .dropdown-content {
-            display: block;
-            opacity: 1;
-            transform: translateY(0);
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Archivo+Black&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css"> <!-- Link to the external CSS file -->
 </head>
 <body class="bg-black text-white">
     <!-- Navigation Bar -->
@@ -144,11 +107,14 @@
         <p>Get up to 24 months of No Cost EMI<sup>‡</sup> plus up to ₹10000.00 instant cashback<sup>*</sup> on selected products with eligible cards. <a class="text-blue-500 hover:underline" href="#">Shop &gt;</a></p>
     </div>
     <!-- Main Content -->
-    <div class="text-center py-5">
+    <div class="text-center py-5 relative">
         <h1 class="text-5xl font-bold mt-5">iPhone 16 Pro</h1>
         <p class="text-xl mt-4">Built for Apple Intelligence.</p>
-        <div class="mt-10 flex justify-center">
-            <model-viewer src="https://raw.githubusercontent.com/prohv/CodechefEntryProject/main/iphone16promax.glb" alt="iphone16pro" auto-rotate camera-controls style="width: 600px; height: 300px;"></model-viewer>
+        <div class="mt-10 flex justify-center relative">
+            <div class="absolute inset-0 flex justify-center items-center">
+                <span class="neon-text">PRO</span>
+            </div>
+            <model-viewer src="https://raw.githubusercontent.com/prohv/CodechefEntryProject/main/iphone16promax.glb" alt="3D model of iPhone 16 Pro" auto-rotate camera-controls style="width: 600px; height: 300px;"></model-viewer>
         </div>
         <div class="mt-10 space-x-4">
             <button class="bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-600">Learn more</button>
